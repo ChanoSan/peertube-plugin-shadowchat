@@ -1,11 +1,11 @@
 {
   "name": "peertube-plugin-shadowchat",
-  "version": "0.4.4",
+  "version": "0.5.0",
   "description": "XMR superchat button for PeerTube livestreams via Shadowchat",
   "license": "AGPL-3.0",
-  "homepage": "https://gitgud.io/japananon",
+  "homepage": "https://github.com/ChanoSan/peertube-plugin-shadowchat",
   "author": "ChanoSan",
-  "bugs": "https://gitgud.io/japananon",
+  "bugs": "https://github.com/ChanoSan/peertube-plugin-shadowchat/issues",
   "engine": {
     "peertube": ">=8.0.0"
   },

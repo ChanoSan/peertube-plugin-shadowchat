@@ -18,7 +18,7 @@ const register = async function ({ registerHook, peertubeHelpers, registerVideoF
     label: "Enable XMR Superchat",
     type: "input-checkbox",
     default: false,
-    descriptionHTML: "Show the XMR Superchat button on this live stream"
+    descriptionHTML: "Show the XMR Superchat button on this live stream",
   }
 
   for (const type of ["go-live", "update"]) {
@@ -31,7 +31,7 @@ const register = async function ({ registerHook, peertubeHelpers, registerVideoF
       try {
         const video = arg.video || arg
         removeSuperchatButton()
-        console.log("[shadowchat] pluginData:", JSON.stringify(video.pluginData), "isLive:", video.isLive)
+
         if (video.isLive && video.pluginData?.shadowchat_enabled) {
           addSuperchatButton()
         }
